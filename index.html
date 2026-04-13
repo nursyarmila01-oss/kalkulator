@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Keuntungan Hijab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Kalkulator Keuntungan Hijab</h1>
+
+    <form method="POST">
+        <label>Modal per Hijab (Rp)</label>
+        <input type="number" name="modal" required>
+
+        <label>Harga Jual per Hijab (Rp)</label>
+        <input type="number" name="harga_jual" required>
+
+        <label>Jumlah Terjual</label>
+        <input type="number" name="jumlah" required>
+
+        <button type="submit">Hitung</button>
+    </form>
+
+    {% if keuntungan is not none %}
+        <div class="hasil">
+            <h2>Keuntungan: Rp {{ keuntungan }}</h2>
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>

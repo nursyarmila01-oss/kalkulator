@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6f4e37, #c4a484);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card */
+.card {
+    background: #fff8f0;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Judul */
+h1 {
+    color: #4b2e2e;
+}
+
+/* Input */
+input {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Tombol */
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    background: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4b2e2e;
+}
+
+/* Hasil */
+.result {
+    margin-top: 20px;
+    background: #f3e5d8;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.result h2 {
+    color: green;
+}
